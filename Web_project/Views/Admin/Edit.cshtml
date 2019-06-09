@@ -1,0 +1,32 @@
+﻿@model Web_project.Models.User
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<form action="/Home/Edit" method="post">
+    <div>
+        <input asp-for="Id" hidden />
+    </div>
+    <div>
+        <label asp-for="Login"></label> <br />
+        <input asp-for="Login" />
+    </div>
+    <div>
+        <label asp-for="Password"></label> <br />
+        <input asp-for="Password" />
+    </div>
+    <div>
+        <label asp-for="Mail"></label> <br />
+        <input asp-for="Mail" />
+    </div>
+    <div>
+        <label asp-for="PhoneNumber"></label> <br />
+        <input asp-for="PhoneNumber" />
+    </div>
+    <div>
+        <input type="submit" value="edit" />
+    </div>
+</form>
+

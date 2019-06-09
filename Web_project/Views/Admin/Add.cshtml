@@ -1,0 +1,18 @@
+﻿@model Web_project.Models.User
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+<form method="post" action="/Home/Add">
+    <label for="Login">Введите логин:</label><br>
+    <input id="Login" name="Login" type="text" /><br>
+    <label for="Password">Введите пароль:</label><br>
+    <input id="Password" name="Password" type="text" /><br>
+    <label for="Mail">Укажите почту:</label><br>
+    <input id="Mail" name="Mail" type="text" /><br>
+    <label for="PhoneNumber">Укажите номер телефона:</label><br>
+    <input id="PhoneNumber" name="PhoneNumber" type="text" /><br>
+    <input type="submit" value="Enter">
+</form>
+
